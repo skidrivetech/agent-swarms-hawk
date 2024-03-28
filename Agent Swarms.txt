@@ -1,0 +1,102 @@
+Agent Swarms:
+
+from agency_swarm import set_openai_key, BaseTool
+
+set_openai_key("sk-xxxxxxxxxxxxxxxxxxxxxx")  # Replace with your actual API key
+
+class SimpleTool(BaseTool):
+    example_field: str
+
+    def run(self):
+        # Logic for your tool would go here.
+        # For now, it just prints the example_field.
+        print(f"The example_field contains: {self.example_field}")
+        return "Result of your tool's logic"
+
+if __name__ == "__main__":
+    tool = SimpleTool(example_field="Hellow World")  # Replace with your input
+    result = tool.run()
+    print(result)
+
+
+
+
+
+
+
+
+
+Absolutely, I'll provide you with a simplified script. Please replace `YOUR_API_KEY` with your actual OpenAI API key and `example_input` with the input you wish to use. Here's a basic Python script:
+
+```python
+from agency_swarm import set_openai_key, BaseTool
+
+set_openai_key((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)
+)
+
+class SimpleTool(BaseTool):
+    example_field: str
+
+    def run(self):
+        # Logic for your tool would go here.
+        # For now, it just prints the example_field.
+        print(f"The example_field contains: {self.example_field}")
+        return "Result of your tool's logic"
+
+if __name__ == "__main__":
+    tool = SimpleTool(example_field="example_input")
+    result = tool.run()
+    print(result)
+```
+
+To run this script:
+
+1. Open a text editor.
+2. Copy the above script into the text editor.
+3. Replace `YOUR_API_KEY` with your actual OpenAI API key.
+4. Replace `example_input` with whatever input you want the `example_field` to have.
+5. Save the file with a `.py` extension, for example, `simple_tool.py`.
+6. Open a command prompt or terminal.
+7. Navigate to the directory where you saved `simple_tool.py`.
+8. Run the script by typing `python simple_tool.py` and pressing Enter.
+
+Make sure Python is installed on your system and that you have installed any required packages such as `agency_swarm`. If `agency_swarm` is not installed, you can typically install it via pip with the command `pip install agency_swarm` in your command prompt or terminal.
+
+
+
+Old
+
+ revised python code to run the deployment of AGENT Swarm Lab:
+
+
+
+from agency_swarm import set_openai_key, BaseTool
+
+# Define your API key here
+API_KEY = "YOUR_API_KEY"
+
+set_openai_key(API_KEY)
+
+class SimpleTool(BaseTool):
+    example_field: str
+
+
+```python
+from agency_swarm import set_openai_key, BaseTool
+
+set_openai_key((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)
+)
+
+
+
+    def run(self):
+        # Logic for your tool would go here.
+        # For now, it just prints the example_field.
+        print(f"The example_field contains: {self.example_field}")
+        return "Result of your tool's logic"
+
+if __name__ == "__main__":
+    tool = SimpleTool(example_field="example_input")  # Replace 'example_input' with your desired input
+    result = tool.run()
+    print(result)
+
